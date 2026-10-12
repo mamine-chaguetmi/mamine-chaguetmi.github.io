@@ -11,8 +11,8 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Mohamed Amine Chaguetmi | Portfolio">
   <meta property="og:description" content="Étudiant en L3 MIAGE à l’Université de Haute-Alsace. Projets, compétences et parcours.">
-  <meta property="og:url" content="https://mamine-chaguetmi.github.io/portfolio/">
-  <meta property="og:image" content="https://mamine-chaguetmi.github.io/portfolio/assets/images/profile.jpg">
+  <meta property="og:url" content="https://mamine-chaguetmi.github.io/">
+  <meta property="og:image" content="https://mamine-chaguetmi.github.io/assets/images/profile.jpg">
   <meta property="og:locale" content="fr_FR">
 
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
@@ -82,7 +82,7 @@
           <div class="lead">
             <p>Je suis actuellement en troisième année de Licence Informatique, parcours MIAGE, à l’Université de Haute-Alsace.</p>
             <p>Je recherche un <strong>stage de mai à août 2027</strong>, puis une <strong>alternance à partir de septembre 2027</strong>.</p>
-            <p class="interests">Développement logiciel · Systèmes d’information · ERP</p>
+            <p class="interests">Développement logiciel · Systèmes d’information · Automatisation</p>
           </div>
 
           <div class="actions">
@@ -117,25 +117,24 @@
     <section id="projets">
       <div class="wrap">
         <div class="head reveal">
-          <span class="num">01 — Projets</span>
-          <h2>Projets sélectionnés</h2>
+          <span class="num">01 — Réalisations</span>
+          <h2>Projets</h2>
         </div>
 
         <article class="project-feature reveal">
           <div class="project-copy">
-            <p class="label">Projet de stage · Python · Flask</p>
+            <p class="label">Python · Flask · Projet de stage</p>
             <h3>Analyse et évaluation de CV</h3>
-            <p class="ctx">Projet réalisé chez Ovie / Dinexus Conseil, cabinet de conseil spécialisé SAP.</p>
+            <p class="ctx">Projet réalisé chez Dinexus Conseil, cabinet de conseil spécialisé SAP.</p>
             <p class="txt">
               Développement d’un outil destiné à faciliter le premier tri des candidatures.
-              L’application extrait les informations principales d’un CV, les compare à une fiche de poste
-              et calcule un score à partir de règles métier.
+              L’application extrait les informations principales des CV, les compare aux critères
+              d’une fiche de poste et calcule un score de pertinence à partir de règles métier.
             </p>
 
             <ul class="chips" aria-label="Technologies utilisées">
               <li>Python</li>
               <li>Flask</li>
-              <li>pdfplumber</li>
               <li>Regex</li>
               <li>JSON</li>
               <li>HTML/CSS</li>
@@ -163,33 +162,64 @@
           </div>
         </article>
 
-        <div class="project-grid">
-          <article class="card project-card reveal">
-            <p class="label">Projet universitaire · C++ · Qt</p>
+        <div class="project-stack">
+          <article class="card project-card project-card-rdv reveal">
+            <p class="label">C++ · Qt · Projet universitaire</p>
             <h3>Gestion des rendez-vous</h3>
             <p class="txt">
-              Application développée en équipe pour gérer les rendez-vous entre étudiants et enseignants.
-              Travail sur l’interface graphique et les structures de données utilisées pour la gestion des rendez-vous.
+              Développement en équipe de trois d’une application de gestion des rendez-vous en C++,
+              avec une interface graphique réalisée sous Qt. L’application permet de gérer les contacts,
+              de créer, modifier et rechercher des rendez-vous, tout en détectant les conflits d’horaires.
             </p>
-            <ul class="chips" aria-label="Technologies utilisées">
+            <p class="txt">
+              Le projet repose sur des listes simplement chaînées et intègre un système de sauvegarde
+              et de chargement des données. J’ai notamment contribué à la gestion des personnes
+              et à la persistance des données.
+            </p>
+            <ul class="chips" aria-label="Technologies et concepts utilisés">
               <li>C++</li>
               <li>Qt</li>
-              <li>CMake</li>
+              <li>Programmation orientée objet</li>
+              <li>Listes chaînées</li>
             </ul>
+
+            <div class="rdv-captures" aria-label="Captures de l'application de rendez-vous">
+              <figure class="rdv-shot">
+                <a href="assets/projects/rendez-vous/clair.png" target="_blank" rel="noopener" aria-label="Afficher la capture de l'application en mode clair">
+                  <img src="assets/projects/rendez-vous/clair.png" alt="Interface de gestion des rendez-vous en mode clair" loading="lazy">
+                </a>
+                <figcaption>Interface — mode clair</figcaption>
+
+              </figure>
+              <figure class="rdv-shot">
+                <a href="assets/projects/rendez-vous/sombre.png" target="_blank" rel="noopener" aria-label="Afficher la capture de l'application en mode sombre">
+                  <img src="assets/projects/rendez-vous/sombre.png" alt="Interface de gestion des rendez-vous en mode sombre" loading="lazy">
+                </a>
+                <figcaption>Interface — mode sombre</figcaption>
+              </figure>
+            </div>
             <p class="note">Projet réalisé à l’Université de Haute-Alsace.</p>
           </article>
 
-          <article class="card project-card reveal">
-            <p class="label">Projet universitaire · Base de données</p>
+          <article class="card project-card project-card-bdd reveal">
+            <p class="label">Microsoft Access · Base de données · Projet universitaire</p>
             <h3>Gestion d’une auto-école</h3>
             <p class="txt">
-              Conception d’une base de données relationnelle pour gérer les principales informations d’une auto-école,
-              avec une interface utilisateur réalisée sous Microsoft Access.
+              Projet réalisé en équipe de quatre, dont j’ai assuré la coordination. Conception et
+              développement d’une base de données relationnelle destinée à la gestion d’une auto-école :
+              élèves, moniteurs, formations, inscriptions, cours et paiements.
             </p>
-            <ul class="chips" aria-label="Technologies utilisées">
+            <p class="txt">
+              Modélisation des données avec la méthode Merise (MCD/MLD), puis réalisation de requêtes
+              et de formulaires sous Microsoft Access. J’ai notamment développé les interfaces de
+              consultation des moniteurs et de recherche des élèves et moniteurs.
+            </p>
+            <ul class="chips" aria-label="Technologies et méthodes utilisées">
               <li>Microsoft Access</li>
               <li>SQL</li>
-              <li>Base de données relationnelle</li>
+              <li>Merise</li>
+              <li>MCD / MLD</li>
+              <li>Gestion de projet</li>
             </ul>
             <p class="note">Projet réalisé à l’Université de Haute-Alsace.</p>
           </article>
@@ -209,13 +239,13 @@
           <article class="card skill reveal">
             <span class="skill-code">Py</span>
             <h3>Python</h3>
-            <p>Flask, automatisation et parsing de documents.</p>
+            <p>Développement d’applications, automatisation et traitement de données.</p>
           </article>
 
           <article class="card skill reveal">
             <span class="skill-code">C++</span>
             <h3>C++</h3>
-            <p>Programmation orientée objet, Qt et CMake.</p>
+            <p>Programmation orientée objet, structures de données et interfaces graphiques.</p>
           </article>
 
           <article class="card skill reveal">
@@ -225,38 +255,55 @@
           </article>
         </div>
 
-        <h3 class="sub reveal">Autres technologies</h3>
-        <ul class="chips big reveal">
-          <li>SQL</li>
-          <li>HTML/CSS</li>
-          <li>PHP</li>
-          <li>Rust</li>
-          <li>Flask</li>
-          <li>Qt</li>
-          <li>Git</li>
-          <li>CMake</li>
-          <li>Bash</li>
-          <li>PowerShell</li>
-          <li>Microsoft Access</li>
-          <li>Microsoft Office</li>
-        </ul>
-
-        <div class="info-grid">
-          <article class="card reveal">
-            <h3>Bases de données</h3>
-            <p>SQL · Microsoft Access · Conception de bases de données relationnelles</p>
-          </article>
-
-          <article class="card reveal">
-            <h3>Langues</h3>
-            <dl class="langs">
-              <div><dt>Arabe</dt><dd>Langue maternelle</dd></div>
-              <div><dt>Français</dt><dd>Bilingue</dd></div>
-              <div><dt>Anglais</dt><dd>B2</dd></div>
-              <div><dt>Allemand</dt><dd>B2</dd></div>
-            </dl>
-          </article>
+        <h3 class="sub reveal">Autres compétences et technologies</h3>
+        <div class="tech-groups">
+          <div class="tech-group reveal">
+            <h4>Langages de programmation</h4>
+            <ul class="chips big">
+              <li>Rust</li><li>PHP</li><li>HTML/CSS</li><li>SQL</li>
+            </ul>
+          </div>
+          <div class="tech-group reveal">
+            <h4>Frameworks et bibliothèques</h4>
+            <ul class="chips big">
+              <li>Flask</li><li>Qt</li>
+            </ul>
+          </div>
+          <div class="tech-group reveal">
+            <h4>Bases de données et modélisation</h4>
+            <ul class="chips big">
+              <li>Microsoft Access</li><li>Bases de données relationnelles</li><li>Merise</li><li>MCD / MLD</li>
+            </ul>
+          </div>
+          <div class="tech-group reveal">
+            <h4>Environnements et outils de développement</h4>
+            <ul class="chips big">
+              <li>Git</li><li>CMake</li><li>VS Code</li><li>Code::Blocks</li><li>CLion</li>
+            </ul>
+          </div>
+          <div class="tech-group reveal">
+            <h4>Scripting et formats de données</h4>
+            <ul class="chips big">
+              <li>Bash</li><li>PowerShell</li><li>JSON</li><li>Regex</li>
+            </ul>
+          </div>
+          <div class="tech-group reveal">
+            <h4>Bureautique</h4>
+            <ul class="chips big">
+              <li>Microsoft Office</li>
+            </ul>
+          </div>
         </div>
+
+        <article class="card langs-card reveal">
+          <h3>Langues</h3>
+          <dl class="langs">
+            <div><dt>Arabe</dt><dd>Langue maternelle</dd></div>
+            <div><dt>Français</dt><dd>Bilingue</dd></div>
+            <div><dt>Anglais</dt><dd>B2</dd></div>
+            <div><dt>Allemand</dt><dd>B2</dd></div>
+          </dl>
+        </article>
       </div>
     </section>
 
@@ -276,7 +323,7 @@
               <li class="reveal">
                 <span class="date">Janv. 2026 → Févr. 2026</span>
                 <h4>Développeur Python</h4>
-                <p class="org">Ovie / Dinexus Conseil — Paris</p>
+                <p class="org">Dinexus Conseil — Paris</p>
                 <p>
                   Développement d’un outil d’analyse et d’évaluation de CV basé sur du parsing,
                   un système de scoring par règles métier et une interface Flask.
@@ -298,11 +345,6 @@
                 <p>Participation au développement d’un programme basé sur Solana avec Rust.</p>
               </li>
 
-              <li class="reveal low">
-                <span class="date">Juin 2025 → Sept. 2025</span>
-                <h4>Équipier polyvalent</h4>
-                <p class="org">Burger King — Illzach</p>
-              </li>
             </ol>
           </div>
 
@@ -339,12 +381,13 @@
           <span class="num">À propos</span>
           <h2>Mohamed Amine Chaguetmi</h2>
           <p>
-            Ma formation en MIAGE me permet de travailler à la fois sur le développement informatique,
-            les systèmes d’information et la gestion de projet.
+            Ma formation en MIAGE me permet de développer des compétences en programmation,
+            en bases de données et en gestion de projet, tout en découvrant le fonctionnement des systèmes d’information.
           </p>
           <p>
-            Après une première expérience dans un cabinet spécialisé SAP, je souhaite continuer à découvrir
-            les systèmes d’information et les ERP tout en développant mes compétences techniques.
+            À travers mes expériences professionnelles et mes projets universitaires, j’ai pu travailler
+            sur le développement d’applications, la gestion des données et l’automatisation de traitements.
+            Je souhaite continuer à approfondir mes compétences techniques et à découvrir de nouveaux domaines de l’informatique.
           </p>
 
           <p class="label interests-title">Centres d’intérêt</p>

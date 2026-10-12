@@ -246,9 +246,18 @@ h2{margin:.5rem 0 1rem;font-size:clamp(2.2rem,4.8vw,3.8rem);letter-spacing:-.035
 .project-actions{margin-top:1.2rem}
 .gallery{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;align-content:start}
 .gallery .shot:first-child{grid-column:1/-1;aspect-ratio:16/9}
-.project-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
-.project-card{min-height:100%;display:flex;flex-direction:column}
-.project-card .chips{margin-top:auto;padding-top:.4rem}
+.project-stack{display:grid;gap:1.4rem}
+.project-card{display:flex;flex-direction:column}
+.project-card .txt + .txt{margin-top:.85rem}
+.project-card .chips{margin-top:1.2rem;padding-top:0}
+.project-card-rdv,.project-card-bdd{padding:2.4rem}
+.project-card .txt{max-width:900px}
+.rdv-captures{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:1.7rem}
+.rdv-shot{min-width:0}
+.rdv-shot a{display:block;overflow:hidden;border:1px solid var(--line);border-radius:9px;background:var(--surface-soft)}
+.rdv-shot img{display:block;width:100%;height:auto;aspect-ratio:8/5;object-fit:contain;transition:transform .25s ease}
+.rdv-shot a:hover img{transform:scale(1.015)}
+.rdv-shot figcaption{margin-top:.5rem;font:.76rem/1.5 var(--mono);color:var(--muted)}
 
 /* ===== Compétences ===== */
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
@@ -262,13 +271,16 @@ h2{margin:.5rem 0 1rem;font-size:clamp(2.2rem,4.8vw,3.8rem);letter-spacing:-.035
 }
 .skill h3{margin-bottom:.55rem;font-size:1.3rem}
 .skill p,.edu p{color:var(--muted)}
-.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-top:3rem}
-.info-grid h3{margin-bottom:.85rem}
-.info-grid p{color:var(--muted)}
-.langs div{display:flex;justify-content:space-between;gap:1rem;padding:.55rem 0;border-bottom:1px solid var(--line)}
-.langs div:last-child{border:0}
+.tech-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:3rem;row-gap:1.8rem;margin-top:1.6rem}
+.tech-group{min-width:0}
+.tech-group h4{font-size:1rem;line-height:1.4}
+.tech-group .chips{margin:.75rem 0 0}
+.langs-card{margin:3rem auto 0;max-width:900px;padding:2rem 2.4rem}
+.langs-card h3{margin-bottom:1rem;font-size:1.3rem}
+.langs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:2.5rem}
+.langs div{display:flex;justify-content:space-between;gap:1rem;padding:.85rem 0;border-bottom:1px solid var(--line)}
 .langs dt{font-weight:600}
-.langs dd{margin:0;font:.78rem var(--mono);color:var(--muted)}
+.langs dd{margin:0;font:.78rem var(--mono);color:var(--muted);text-align:right}
 
 /* ===== Parcours ===== */
 .cols{display:grid;grid-template-columns:1.22fr .95fr;gap:4rem}
@@ -290,7 +302,6 @@ h2{margin:.5rem 0 1rem;font-size:clamp(2.2rem,4.8vw,3.8rem);letter-spacing:-.035
 .timeline h4,.edu h4{margin:.32rem 0 .08rem;font-size:1.2rem}
 .org{color:var(--text);font-weight:600;font-size:.92rem}
 .timeline p:not(.org):not(.note){margin-top:.6rem;color:var(--muted);font-size:.93rem}
-.timeline .low{opacity:.72}
 .edu{margin-bottom:1.2rem}
 .edu .org{margin-bottom:.4rem}
 
@@ -374,8 +385,9 @@ h2{margin:.5rem 0 1rem;font-size:clamp(2.2rem,4.8vw,3.8rem);letter-spacing:-.035
 @media (max-width:640px){
   section{padding:4.5rem 0}
   .wrap{width:min(var(--max),100% - 1.5rem)}
-  .grid3,.project-grid,.info-grid,.about .wrap,.contact-list{grid-template-columns:1fr}
-  .project-feature{padding:1.35rem}
+  .grid3,.tech-groups,.about .wrap,.contact-list,.langs,.rdv-captures{grid-template-columns:1fr}
+  .project-feature,.project-card-rdv,.project-card-bdd{padding:1.35rem}
+  .langs-card{padding:1.35rem}
   .gallery{grid-template-columns:1fr}
   .gallery .shot:first-child{grid-column:auto}
   .profile-card{max-width:250px}
