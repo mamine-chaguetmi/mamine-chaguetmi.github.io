@@ -275,12 +275,6 @@ h2{margin:.5rem 0 1rem;font-size:clamp(2.2rem,4.8vw,3.8rem);letter-spacing:-.035
 .tech-group{min-width:0}
 .tech-group h4{font-size:1rem;line-height:1.4}
 .tech-group .chips{margin:.75rem 0 0}
-.langs-card{margin:3rem auto 0;max-width:900px;padding:2rem 2.4rem}
-.langs-card h3{margin-bottom:1rem;font-size:1.3rem}
-.langs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:2.5rem}
-.langs div{display:flex;justify-content:space-between;gap:1rem;padding:.85rem 0;border-bottom:1px solid var(--line)}
-.langs dt{font-weight:600}
-.langs dd{margin:0;font:.78rem var(--mono);color:var(--muted);text-align:right}
 
 /* ===== Parcours ===== */
 .cols{display:grid;grid-template-columns:1.22fr .95fr;gap:4rem}
@@ -387,7 +381,6 @@ h2{margin:.5rem 0 1rem;font-size:clamp(2.2rem,4.8vw,3.8rem);letter-spacing:-.035
   .wrap{width:min(var(--max),100% - 1.5rem)}
   .grid3,.tech-groups,.about .wrap,.contact-list,.langs,.rdv-captures{grid-template-columns:1fr}
   .project-feature,.project-card-rdv,.project-card-bdd{padding:1.35rem}
-  .langs-card{padding:1.35rem}
   .gallery{grid-template-columns:1fr}
   .gallery .shot:first-child{grid-column:auto}
   .profile-card{max-width:250px}
